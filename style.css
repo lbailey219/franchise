@@ -14,8 +14,16 @@ color: white;
 padding: 10px;
 bottom: 0;
 }
-img{
-  height: 30px;
+.col{
+  float: right;
+}
+/* .col-3{
+  background-image: url(images/gihaul--logo.png);
+  width: 100px;
+} */
+
+.book-now p {
+
 }
 .col-sm-3 {
   margin-top: 10px;
@@ -24,15 +32,10 @@ img{
   margin-left: 450px;
   margin: auto;
 }
-.navbar {
-  background-color: white;
-  width: 40%;
-  float:right;
-  padding: 0rem;
+.nav-link{
+  height: 40px;
 }
-.container {
-  height: 100px;
-}
+
 .bg-light {
   background-color: rgba(0,0,0,.4)!important;
   margin-left: : 80px;
@@ -49,6 +52,14 @@ img{
   margin-left: 250px;
 font-size: x-large;
 }
+.nav-link3{
+  margin-top: 52px;
+
+}
+.number{
+  margin-left: 62%;
+  font-stretch: extra-expande;
+}
 
 h6{
   font-size: 15px;
@@ -56,4 +67,7 @@ h6{
 a{
   display: inline-block;
   float: right;
+  color: black;
+  margin-top: 20PX;
+  margin-right: 50px;
 }
