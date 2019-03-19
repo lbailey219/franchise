@@ -34,9 +34,6 @@ div.hero--background-image {
   height: 40px;
 }
 
-.bg-light {
-  background-color: rgba(0,0,0,.4)!important;
-  margin-left: : 80px;
 }
 .navbar.navbar-light.bg-light {
   float: right;
