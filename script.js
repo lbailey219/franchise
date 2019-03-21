@@ -11,10 +11,13 @@ $(document).ready(function() {
 
     getZipcode(zipcode);
     });
-    $('#modal--submit').on('click',function(){
-       $('#removal-result').slideToggle();
-     });
+    
+    $('#modal--submit').click(function(){
+    var zipcode = $('#zipcode').val();
+    var email = $('[name="email"]').val();
 
+     submitForm('zipcode, email');
+   });
 
 
 
