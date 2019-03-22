@@ -4,11 +4,20 @@ function getZipcode(zipcode) {
   $('#modal--zipcode').val(zipcode);
 }
 
-function submitForm(zipcode, email) {
-  console.log('this is the zipcode: ', zipcode);
-  console.log(email);
-  // $('#modal--zipcode').val(zipcode);
+function formSubmit(name) {
+  var serializedData = $(document.forms[name]).serializeObject();
+  var url = 'https://script.google.com/macros/s/AKfycbz8vrNJ6aHq3d4p4IzXQMSshNbFx7WM9tzyyGFA9ULVzIiFFjo/exec';
+  var jqxhr = $.ajax({
+    url,
+    method: "GET",
+    dataType: "json",
+    data: serializedData,
+    success: function(data){
+      console.log('success', data);
+    }
+  });
 }
+
 
 $(document).ready(function() {
   // evnt handlers
@@ -18,10 +27,9 @@ $(document).ready(function() {
     getZipcode(zipcode);
   });
 
-  $('#modal--submit').click(function(){
-    var zipcode = $('#modal--zipcode').val();
-    var email = $('#modal--email').val();
+  $('[rel="form--quote"]').submit(function(e){ // [name="form--quote"]
+    e.preventDefault();
 
-    submitForm(zipcode, email);
+    formSubmit(e.currentTarget.name);
   });
 });
