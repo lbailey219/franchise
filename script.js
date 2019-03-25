@@ -32,4 +32,8 @@ $(document).ready(function() {
 
     formSubmit(e.currentTarget.name);
   });
+
+  $('#modal--submit').on('click', function() {
+    $('#quote-form').toggle();
+  });
 });
