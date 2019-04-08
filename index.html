@@ -11,15 +11,48 @@
     <title>Gihaul</title>
   </head>
   <body>
-    <!-- navbar -->
+
+    <!-- <nav class="navbar navbar-expand-md navbar-light text-right">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+    <a class="navbar-brand" href="#" title="G.I.HAUL Logo">
+        <img src="images/gihaul--logo.png" width="150" height="80"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse show" id="navbarCollapse" style="margin-right: 200px;">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Book Now <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">How it Works</a>
+        </li>
+      </ul>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+  </nav> -->
+
+
+
+
+     <!-- navbar -->
     <header>
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <img src="images/gihaul--logo.png" width="150" height="80"/>
+            <img src="images/gihaul--logo.png" width="150" height="100"/>
           </div>
-          <div class="col-9">
-            <nav class="nav-link">
+          <div class="col-9 nav-link">
               <span class="number">Call 1-855-8GI-HAUL</span>
               <a class="nav-link" href="#">Book Now</a>
               <a class="nav-link" href="#">Reviews</a>
@@ -31,7 +64,6 @@
     </header>
     <!-- Hero -->
     <div class="hero--background-image">
-      <img class="images/hero.jpg" />
       <!-- Action Bar -->
       <div class="hero--action-bar">
         <div class="container">
@@ -59,20 +91,17 @@
     <div class="book-now">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9">
+          <div class="col-md-9 removal">
             <h1>Tampa Bay Area Junk Removal</h1>
-            <div class="col-lg2">
               <p>Whether its residential or commercial,<br>
                 we're happy to remove your trash so you dont have to
               </p>
-            </div>
-             <div class="col-lg3">
+
                <button type="button" class="btn btn-book btn-lg" style="background-color: black; color: white;">BOOK NOW</button>
                <ins><strong>ITEMS WE REMOVE</strong></ins>
-            </div>
           </div>
-          <div class="col-md-3">
-            <img src="images/junk.jpg" height="300"/>
+          <div class="col-md-3 junk-img">
+            <img src="images/junk.jpg"/>
           </div>
         </div>
       </div>
@@ -93,26 +122,43 @@
                 <p ALIGN=CENTER>We're Veteran Owned & Operated</p>
                 <p ALIGN=CENTER>We'll Pick Up Just About Any Junk</p>
                 <p ALIGN=CENTER>We'll beat any written junk removal estimate</p>
-                <button type="button" class="btn btn-primary btn-lg" style="background-color: black; color: white;">REQUEST A QUOTE</button>
+                <button type="button" class="btn btn-primary btn-lg" style="  border-color: #01060a; background-color: black; color: white;">REQUEST A QUOTE</button>
               </div>
         </div>
       </div>
     </div>
 
     <!-- instagram-->
-    <div class="instagram">
-      <div class="container" position="absolute">
+    <!-- <div class="container-fluid instagram-container">
+     <div class="row">
+       <div class="col pl-0">
+         <a href="https://www.instagram.com/g.i.haul/" target="_blank" title="G.I.HAUL on Instagram">
+           <div class="position-relative">
+             <img src="images/ig-1.jpg" class="w-100" />
+             <img class="ig-logo" src="images/ig-logo.png" />
+           </div>
+         </a>
+       </div>
+       <div class="col pr-0">
+         <a href="https://www.instagram.com/g.i.haul/" target="_blank" title="G.I.HAUL on Instagram">
+           <div class="position-relative">
+             <img src="images/ig-2.jpg" class="w-100" />
+             <img class="ig-logo" src="images/ig-logo.png" />
+           </div>
+         </a>
+       </div>
+     </div>
+   </div> -->
+       <div class="container ig-img">
         <div class="row">
-          <div class="col-lg-6">
-            <img src="images/ig-1.jpg" pt"0" class="w-100" />
-              <img src="images/ig-logo.png" position="absolute"/>
+          <div class="col-lg-6 pl-0 instagram">
+            <img src="images/ig-1.jpg" class="w-100" />
           </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 pr-0 instagram">
               <img src="images/ig-2.jpg" class="w-100" />
             </div>
         </div>
       </div>
-    </div>
 
     <!-- Top Rated Section -->
     <div class="container">
@@ -122,13 +168,13 @@
           <h2 ALIGN=CENTER> see what our customers say about us</h2>
         </div>
 
-        <div class="col-sm">
+        <div class="col-md-4 google">
             <img src="images/google.png" height="113"/>
         </div>
-        <div class="2col-sm">
-          <img src="images/home-advisor.png" height="113"/>
+        <div class="col-md-4 advisor">
+          <img  src="images/home-advisor.png" height="113"/>
         </div>
-        <div class="col-sm">
+        <div class="col-md-4 fb">
           <img ALIGN=RIGHT src="images/facebook.png" height="113"/>
         </div>
       </div>
@@ -160,8 +206,8 @@
                 <li> Contractor garbage and waste removal</li>
                 <li> Dont see your item on our list? <ins>Contact Us!</ins>
               </ul>
-            </div>
-            <button type="button" class="btn btn-primary btn-lg" style="background-color: black; color: white;">Request A Quote</button>
+            <button type="button" class="btn btn-primary btn-lg" style=" border-color: #01060a; background-color: black; color: white;">Request A Quote</button>
+          </div>
         </div>
       </div>
     </div>
@@ -169,14 +215,14 @@
     <!-- Why Hire Gihaul -->
     <div class="container">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-8 beach">
           <h1><strong> Why Hire G.I.Haul?</strong></h1>
           <p> our hassle free services allow you to go about your life,<br>
             while we do the heavy lifting for you. New customer get $35 off </p>
-            <button type="button" class="btn btn-bn2 btn-lg" style="background-color: black; color: white;">Book Now</button>
+            <button type="button" class="btn btn-bn2 btn-lg" style="  background-color: black; color: white;">Book Now</button>
             </div>
-          <div class="col-md-3">
-          <img src="images/beach.jpg" height="313"/>
+          <div class="col-md-4 beach">
+          <img src="images/beach.jpg" height="313" style="margin-top: 50px;"/>
         </div>
         </div>
       </div>
@@ -197,9 +243,14 @@
         <div class="foot-logo" class="col-12">
           <img src="images/gihaul-logo--footer.jpg" height="90"/>
         </div>
-        <div class="col-12">
+        <div class="col-12 bot-link">
           <span>Call 1-855-8GI-HAUL</span>
-          <p>Franchise Opportunities &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms of Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</p>
+          <nav>
+            <a class="nav-link2" href="#">Franchise Oppurtunity</a>
+            <a class="nav-link2" href="#">Terms of Serice</a>
+            <a class="nav-link2" href="#">Privacy Policy</a>
+          </nav>
+
         </div>
       </div>
     </div>
